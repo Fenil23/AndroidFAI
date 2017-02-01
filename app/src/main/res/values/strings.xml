@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Andro Restro</string>
+    <string name="andro_version">Andro Version</string>
+    <string name="android_kitkat">Android Kitkat</string>
+    <string name="lorem_ipsum_dsfd_fdsk_j_laewp_poeiwe_p_daspodasd_p">Ahmedabad</string>
+    <string name="andro_restro">Andro Restro</string>
+    <string name="andro_restroid">Andro Restroid</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="asset_statements">
+      [{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.example.mind.androidfai",
+               "sha256_cert_fingerprints": ["FD:A2:FA:5F:AD:F3:FE:EA:F9:8E:88:86:23:C5:F0:2F:C7:B1:F5:4F:11:D7:11:38:74:10:8E:A4:0E:5E:DD:AF"] }
+}]
+    </string>
+</resources>

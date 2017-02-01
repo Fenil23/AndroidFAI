@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/superb_seaside_restaurant_full_hd_wallpaper"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:text="@string/andro_restroid"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:textSize="40sp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

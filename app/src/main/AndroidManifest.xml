@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mind.androidfai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".AndroRestro"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RestaurantActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "https://www.example.com/articles/" -->
+
+                <data android:scheme="https"
+                    android:host="www.example.com"
+                    android:pathPrefix="/restaurant/" />
+
+                <data android:scheme="https"
+                    android:host="www.example.com"
+                    android:pathPrefix="/restaurant/" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".RestraurantDetails">
+        </activity>
+
+        <!-- [START refresh_index] -->
+        <service android:name=".AppIndexingService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.APPINDEXING">
+            <intent-filter>
+                <action android:name="com.google.firebase.appindexing.UPDATE_INDEX" />
+            </intent-filter>
+        </service>
+        <!-- [END refresh_index] -->
+    </application>
+
+</manifest>
